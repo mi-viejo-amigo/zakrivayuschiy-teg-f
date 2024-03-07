@@ -12,3 +12,107 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+/* АНИМАЦИЯ СТРЕЛОЧКИ АКТИВИРОВАННОЙ ТЕМЫ */
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  inset-inline-start: -20px;
+  inset-block-end: 0;
+  inline-size: 14px;
+  block-size: 14px;
+  animation: moving 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(4px);
+  }
+}
+
+/* АНИМАЦИЯ СЕРДЕЧКА LIKE */
+
+.like-icon:hover .core {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--accent-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .core {
+  fill: var(--heart-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .contour {
+  transition: fill 0.3s 0.06s linear;
+  fill: var(--heart-color);
+}
+
+.like-icon.is-liked .core {
+  transition: fill 0.3s linear;
+  fill: var(--heart-color);
+}
+
+.like-icon.is-liked .main-body {
+  transition: fill 0.3s 0.05s linear;
+  fill: var(--heart-color);
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s 0.3s ease-in alternate;
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: heartBeat 0.3s 0.1s ease-in alternate;
+}
+
+@keyframes heartBeat {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.sparks {
+  opacity: 0;
+}
