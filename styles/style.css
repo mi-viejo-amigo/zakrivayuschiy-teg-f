@@ -169,7 +169,7 @@
 }
 
 .card__img_filter-three {
-  filter: hue-rotate(90deg) saturate(250%);
+  filter:hue-rotate(90deg) saturate(50%) blur(10px);
 }
 
 .card__img_filter-four {
@@ -202,8 +202,7 @@
 
 @supports (
   (text-stroke: 1px var(--bg-color)) or
-    (-webkit-text-stroke: 1px var(--bg-color))
-) {
+    (-webkit-text-stroke: 1px var(--bg-color))) {
   .card__img-watermark {
     -webkit-text-stroke: 1px var(--bg-color);
     text-stroke: 1px var(--bg-color);

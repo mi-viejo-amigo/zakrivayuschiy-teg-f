@@ -15,6 +15,7 @@
 }
 
 @media (width <= 375px) {
+  
   :root{
   --width: 100vw;
 }
