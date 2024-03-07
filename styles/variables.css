@@ -9,8 +9,8 @@
   --heart-color: #FF0000;
   --bg-color: #FFFFFF;
   --hover-text:#ffffff;
-  --wght-dark: 800; 
-  --wght-light: 700;
+  --wght-heading: 700; 
+  --wght-text: 400;
   --width: clamp(375px, 100%, 700px);
 }
 

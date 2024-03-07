@@ -25,7 +25,7 @@
 .page {
   font-family: var(--accent-font);
   font-weight: 400;
-  font-variation-settings: "wght" var(--wght-light);
+  font-variation-settings: "wght" var(--wght-text);
   font-size: 1.125rem; /* 18px */
   padding: 100px 0;
   min-inline-size: 375px;
@@ -139,6 +139,7 @@
 
 .card__title {
   padding: 5px 10px;
+  font-variation-settings: "wght" var(--wght-heading);
   font-size: inherit;
 }
 
@@ -168,7 +169,7 @@
 }
 
 .card__img_filter-three {
-  filter:hue-rotate(90deg) saturate(250%);
+  filter: hue-rotate(90deg) saturate(250%);
 }
 
 .card__img_filter-four {
@@ -200,11 +201,12 @@
 }
 
 @supports (
-  /* (text-stroke: 1px var(--bg-color)) or */
-    (-webkit-text-stroke: 1px var(--bg-color))) {
+  (text-stroke: 1px var(--bg-color)) or
+    (-webkit-text-stroke: 1px var(--bg-color))
+) {
   .card__img-watermark {
     -webkit-text-stroke: 1px var(--bg-color);
-    /* text-stroke: 1px var(--bg-color); */
+    text-stroke: 1px var(--bg-color);
     text-shadow: none;
   }
 }
@@ -216,7 +218,6 @@
 }
 
 .card__text {
-  font-variation-settings: "wght" 400;
   word-break: keep-all;
 }
 
