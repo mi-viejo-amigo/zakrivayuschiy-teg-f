@@ -22,8 +22,8 @@
   </head>
   <body class="page">
     <header class="header content-sizing">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <h2 class="header__subtitle">закрывающий тег</h2>
+      <a class="header__logo" href="#!">&lt;/HTML&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
 
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -52,7 +52,8 @@
       </nav>
     </header>
     <main class="main content-sizing">
-      <section class="card">
+      <section class="main__content-wrapper">
+      <article class="card">
         <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
@@ -60,10 +61,10 @@
           <img
             class="card__img"
             loading="lazy"
-            src="./images/card-image/auto-caravana.png"
-            alt="Декоративная пиксельная картинка туристического фургончика стоящего в лесу ночью в фиолетовых тонах"
+            src="./images/card-image/start.jpg"
+            alt="фото приборов панели автомобиля, с кнопкой старта/стоп двигателя"
           />
-          <div class="card__img-watermark">&lt;/HTML&gt;</div>
+          <span class="card__img-watermark">&lt;/HTML&gt;</span>
         </div>
         <div class="card__text-wrapper">
           <p class="card__text">
@@ -77,9 +78,10 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -112,22 +114,22 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__img card__img_filter-one"
+            class="card__img card__img_filter-saturate"
             loading="lazy"
-            src="./images/card-image/auto-caravana.png"
-            alt="Декоративная пиксельная картинка туристического фургончика стоящего в лесу ночью в фиолетовых тонах"
+            src="./images/card-image/empty-page.jpg"
+            alt="фотография печатной машинки с чистым листом"
           />
-          <div class="card__img-watermark">&lt;/HTML&gt;</div>
+          <span class="card__img-watermark">&lt;/HTML&gt;</span>
         </div>
         <div class="card__text-wrapper">
           <p class="card__text">
@@ -142,9 +144,10 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -177,22 +180,22 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__img card__img_filter-two"
+            class="card__img card__img_filter-grayscale"
             loading="lazy"
-            src="./images/card-image/auto-caravana.png"
-            alt="Декоративная пиксельная картинка туристического фургончика стоящего в лесу ночью в фиолетовых тонах"
+            src="./images/card-image/fear.jpg"
+            alt="картинка в ярких красных тонах, и фестивальный японский дракон"
           />
-          <div class="card__img-watermark">&lt;CSS&gt;</div>
+          <span class="card__img-watermark">&lt;CSS&gt;</span>
         </div>
         <div class="card__text-wrapper">
           <p class="card__text">
@@ -206,9 +209,10 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -241,22 +245,22 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__img card__img_filter-three"
+            class="card__img card__img_filter-hue-rotate"
             loading="lazy"
-            src="./images/card-image/auto-caravana.png"
-            alt="Декоративная пиксельная картинка туристического фургончика стоящего в лесу ночью в фиолетовых тонах"
+            src="./images/card-image/dificult.jpg"
+            alt="Молодой человек в музее рассматривает множественную составную картину из разных деталей"
           />
-          <div class="card__img-watermark">&lt;desigions&gt;</div>
+          <span class="card__img-watermark">&lt;desigions&gt;</span>
         </div>
         <div class="card__text-wrapper">
           <p class="card__text">
@@ -272,9 +276,10 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -307,22 +312,22 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__img card__img_filter-four"
+            class="card__img card__img_filter-sepia"
             loading="lazy"
-            src="./images/card-image/auto-caravana.png"
-            alt="Декоративная пиксельная картинка туристического фургончика стоящего в лесу ночью в фиолетовых тонах"
+            src="./images/card-image/company.jpg"
+            alt="Картинка памятника некого бойца индийских племен, вокруг много людей, выступающих в поддержку сохранения памятника"
           />
-          <div class="card__img-watermark">care</div>
+          <span class="card__img-watermark">care</span>
         </div>
         <div class="card__text-wrapper">
           <p class="card__text">
@@ -341,9 +346,10 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -376,22 +382,22 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__img card__img_filter-five"
+            class="card__img card__img_filter-blur"
             loading="lazy"
-            src="./images/card-image/auto-caravana.png"
-            alt="Декоративная пиксельная картинка туристического фургончика стоящего в лесу ночью в фиолетовых тонах"
+            src="./images/card-image/brain.jpg"
+            alt="Картинка искуственного мозга, из полупрозрачных синего и белого цвета"
           />
-          <div class="card__img-watermark">&lt;support&gt;</div>
+          <span class="card__img-watermark">&lt;support&gt;</span>
         </div>
         <div class="card__text-wrapper">
           <p class="card__text">
@@ -406,9 +412,10 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -441,22 +448,22 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__img card__img_filter-six"
+            class="card__img card__img_filter-saturate-brightness"
             loading="lazy"
-            src="./images/card-image/auto-caravana.png"
-            alt="Декоративная пиксельная картинка туристического фургончика стоящего в лесу ночью в фиолетовых тонах"
+            src="./images/card-image/alone-in-space.jpg"
+            alt="Человек один стоит на земле , акцент звездном небе"
           />
-          <div class="card__img-watermark">&lt;lifes-style: none;&gt;</div>
+          <span class="card__img-watermark">&lt;lifes-style: none;&gt;</span>
         </div>
         <div class="card__text-wrapper">
           <p class="card__text">
@@ -475,9 +482,10 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -510,22 +518,22 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
+      <article class="card">
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__img card__img_filter-seven"
+            class="card__img card__img_filter-brightness"
             loading="lazy"
-            src="./images/card-image/auto-caravana.png"
-            alt="Декоративная пиксельная картинка туристического фургончика стоящего в лесу ночью в фиолетовых тонах"
+            src="./images/card-image/step.jpg" 
+            alt="Человек корабкается в гору , видно его силуэт, ярко светит солнце"
           />
-          <div class="card__img-watermark">&lt;experience&gt;</div>
+          <span class="card__img-watermark">&lt;experience&gt;</span>
         </div>
         <div class="card__text-wrapper">
           <p class="card__text">
@@ -543,9 +551,10 @@
           </p>
         </div>
         <div class="card__button-wrapper">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -578,534 +587,54 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-    </main>
+      </article>
+    </section>
 
-    <footer class="footer">
+    <section class="save-section">
       <button
-        class="save-button"
+        class="save-button button"
+        type="button"
         aria-controls="save-dialog"
         onclick="window['save-dialog'].showModal();"
       >
         <svg
           class="save-button__icon"
-          width="21"
-          height="21"
-          viewBox="0 0 21 21"
+          
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <use href="#floppy"></use>
+          <use href="./images/svg/floppy.svg#floppy"></use>
         </svg>
 
         <span class="button__text">Сохранить на память</span>
       </button>
 
-      <dialog class="footer__dialog" id="save-dialog">
+      <dialog class="save__dialog" id="save-dialog">
         <svg
           class="dialog__icon"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <use href="./images/svg/floppy.svg#floppy-dialog"></use>
+          <use href="./images/svg/floppy.svg#floppy"></use>
         </svg>
         <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
         
         <button
-          class="dialog__close-button"
-          type="submit"
+          class="dialog__close-button button"
+          type="button"
           onclick="window['save-dialog'].close();"
         >
           <span class="button__text">OK</span>
         </button>
       </dialog>
-    </footer>
+    </section>
+    </main>
+
+    
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-
-<svg
-  width="21"
-  height="21"
-  viewBox="0 0 21 21"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <symbol id="floppy" viewBox="0 0 21 21">
-    <rect width="1.61538" height="1.61538" />
-    <rect y="1.61523" width="1.61538" height="1.61538" />
-    <rect y="3.23096" width="1.61538" height="1.61538" />
-    <rect y="4.84619" width="1.61538" height="1.61538" />
-    <rect y="6.46143" width="1.61538" height="1.61538" />
-    <rect y="8.07715" width="1.61538" height="1.61538" />
-    <rect y="9.69238" width="1.61538" height="1.61538" />
-    <rect y="11.3076" width="1.61538" height="1.61538" />
-    <rect y="12.9229" width="1.61538" height="1.61538" />
-    <rect y="14.5386" width="1.61538" height="1.61538" />
-    <rect y="16.1538" width="1.61538" height="1.61538" />
-    <rect y="17.769" width="1.61538" height="1.61538" />
-    <rect y="19.3848" width="1.61538" height="1.61538" />
-    <rect
-      x="17.7693"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 17.7693 0)"
-    />
-    <rect
-      x="16.1538"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 16.1538 0)"
-    />
-    <rect
-      x="14.5385"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 14.5385 0)"
-    />
-    <rect
-      x="12.9231"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 12.9231 0)"
-    />
-    <rect
-      x="11.3077"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 11.3077 0)"
-    />
-    <rect
-      x="9.69226"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 9.69226 0)"
-    />
-    <rect
-      x="8.0769"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 8.0769 0)"
-    />
-    <rect
-      x="6.46155"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 6.46155 0)"
-    />
-    <rect
-      x="4.84619"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 0)"
-    />
-    <rect
-      x="3.23071"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 3.23071 0)"
-    />
-    <rect
-      x="19.3846"
-      y="1.61523"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 19.3846 1.61523)"
-    />
-    <rect
-      x="4.84619"
-      y="3.23096"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 3.23096)"
-    />
-    <rect
-      x="4.84619"
-      y="1.61523"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 1.61523)"
-    />
-    <rect
-      x="4.84619"
-      y="4.84619"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 4.84619)"
-    />
-    <rect
-      x="16.1538"
-      y="3.23096"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 16.1538 3.23096)"
-    />
-    <rect
-      x="16.1538"
-      y="1.61523"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 16.1538 1.61523)"
-    />
-    <rect
-      x="16.1538"
-      y="4.84619"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 16.1538 4.84619)"
-    />
-    <rect
-      x="12.9231"
-      y="3.23096"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 12.9231 3.23096)"
-    />
-    <rect
-      x="12.9231"
-      y="1.61523"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 12.9231 1.61523)"
-    />
-    <rect
-      x="12.9231"
-      y="4.84619"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 12.9231 4.84619)"
-    />
-    <rect
-      x="16.1538"
-      y="6.46143"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 16.1538 6.46143)"
-    />
-    <rect
-      x="14.5385"
-      y="6.46143"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 14.5385 6.46143)"
-    />
-    <rect
-      x="12.9231"
-      y="6.46143"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 12.9231 6.46143)"
-    />
-    <rect
-      x="11.3077"
-      y="6.46143"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 11.3077 6.46143)"
-    />
-    <rect
-      x="9.69226"
-      y="6.46143"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 9.69226 6.46143)"
-    />
-    <rect
-      x="8.0769"
-      y="6.46143"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 8.0769 6.46143)"
-    />
-    <rect
-      x="6.46155"
-      y="6.46143"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 6.46155 6.46143)"
-    />
-    <rect
-      x="4.84619"
-      y="6.46143"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 6.46143)"
-    />
-    <rect
-      x="17.7693"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 17.7693 11.3076)"
-    />
-    <rect
-      x="16.1538"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 16.1538 11.3076)"
-    />
-    <rect
-      x="14.5385"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 14.5385 11.3076)"
-    />
-    <rect
-      x="12.9231"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 12.9231 11.3076)"
-    />
-    <rect
-      x="11.3077"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 11.3077 11.3076)"
-    />
-    <rect
-      x="9.69226"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 9.69226 11.3076)"
-    />
-    <rect
-      x="8.0769"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 8.0769 11.3076)"
-    />
-    <rect
-      x="6.46155"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 6.46155 11.3076)"
-    />
-    <rect
-      x="4.84619"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 11.3076)"
-    />
-    <rect
-      x="17.7693"
-      y="12.9229"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 17.7693 12.9229)"
-    />
-    <rect
-      x="4.84619"
-      y="12.9229"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 12.9229)"
-    />
-    <rect
-      x="17.7693"
-      y="14.5386"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 17.7693 14.5386)"
-    />
-    <rect
-      x="4.84619"
-      y="14.5386"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 14.5386)"
-    />
-    <rect
-      x="17.7693"
-      y="16.1538"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 17.7693 16.1538)"
-    />
-    <rect
-      x="4.84619"
-      y="16.1538"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 16.1538)"
-    />
-    <rect
-      x="4.84619"
-      y="17.769"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 17.769)"
-    />
-    <rect
-      x="17.7693"
-      y="17.769"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 17.7693 17.769)"
-    />
-    <rect
-      x="19.3846"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 19.3846 19.3848)"
-    />
-    <rect
-      x="17.7693"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 17.7693 19.3848)"
-    />
-    <rect
-      x="16.1538"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 16.1538 19.3848)"
-    />
-    <rect
-      x="14.5385"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 14.5385 19.3848)"
-    />
-    <rect
-      x="12.9231"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 12.9231 19.3848)"
-    />
-    <rect
-      x="11.3077"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 11.3077 19.3848)"
-    />
-    <rect
-      x="9.69226"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 9.69226 19.3848)"
-    />
-    <rect
-      x="8.0769"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 8.0769 19.3848)"
-    />
-    <rect
-      x="6.46155"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 6.46155 19.3848)"
-    />
-    <rect
-      x="4.84619"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 4.84619 19.3848)"
-    />
-    <rect
-      x="3.23071"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(90 3.23071 19.3848)"
-    />
-    <rect
-      x="21"
-      y="21"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 21)"
-    />
-    <rect
-      x="21"
-      y="19.3848"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 19.3848)"
-    />
-    <rect
-      x="21"
-      y="17.769"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 17.769)"
-    />
-    <rect
-      x="21"
-      y="16.1538"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 16.1538)"
-    />
-    <rect
-      x="21"
-      y="14.5386"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 14.5386)"
-    />
-    <rect
-      x="21"
-      y="12.9229"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 12.9229)"
-    />
-    <rect
-      x="21"
-      y="11.3076"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 11.3076)"
-    />
-    <rect
-      x="21"
-      y="9.69238"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 9.69238)"
-    />
-    <rect
-      x="21"
-      y="8.07715"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 8.07715)"
-    />
-    <rect
-      x="21"
-      y="6.46143"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 6.46143)"
-    />
-    <rect
-      x="21"
-      y="4.84619"
-      width="1.61538"
-      height="1.61538"
-      transform="rotate(-180 21 4.84619)"
-    />
-  </symbol>
-</svg>

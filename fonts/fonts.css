@@ -15,13 +15,3 @@
   src:
     url(./PressStart2P-Regular.woff) format('woff');
 }
-
-.page {
-  font-family: var(--accent-font), sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-  .page {
-      font-family: var(--main-font), sans-serif;
-  }
-} 
