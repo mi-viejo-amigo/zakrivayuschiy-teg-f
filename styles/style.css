@@ -369,6 +369,7 @@
 
 .save__dialog {
   grid-template-columns: 39px 1fr;
+  grid-template-rows: min-content min-content;
   gap: 30px 20px;
   max-inline-size: 353px;
   padding: 30px;
